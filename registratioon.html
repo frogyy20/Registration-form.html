@@ -1,0 +1,85 @@
+<html>
+<head>
+<script type="text/javascript"> function check(){
+var i=parseInt(document.getElementById("roll").value); if (i<0){
+alert("Enter valid Roll Number");
+}
+else{
+alert("Valid Roll Number submitted successfully");
+}
+}
+</script>
+<style>
+tab1 { padding-left: 6em; } body {
+font-family: "Times New Roman", Times, serif; background-color: black;
+}
+* {
+box-sizing: border-box;
+}
+.container {
+padding: 16px;
+background-color: lightblue;
+}
+hr {
+border: 1px solid hsl(0, 0%, 95%); margin-bottom: 25px;
+}
+input[type=text], select, textarea { width: 90%;
+padding: 12px;
+border: 1px solid #ccc; margin-top: 6px; margin-bottom: 16px; resize: vertical;
+}
+.container li{
+display:inline-block;
+}
+.registerbtn {
+background-color: #4CAF50; color: white;
+padding: 12px 15px; margin: 5px 500px; border: none; cursor: pointer; width: 20%;
+opacity: 0.9;
+}
+.registerbtn:hover {
+opacity: 9;
+}
+</style>
+</head>
+<body>
+<form action="#" method="#">
+<div class="container">
+<h1> REGISTRATION FORM </h1>
+<h3> STUDENT DETAILS </h3><hr>
+<ul>
+<li>Roll Number: <input type="text" placeholder="Enter RollNo" name="RollNo"
+id="roll"
+required /></li>
+<li>Name: <input type="text" placeholder="Enter Name" name="Name" required /></li>
+<li>Email: <input type="text" placeholder="Enter Email" name="Email" required
+/><br></li>
+<li>Department: <select id="Department" name="Department">
+<option>Select Option</option>
+<option value="CSE">CSE</option>
+<option value="MECH">MECH</option>
+<option value="ECE">ECE</option>
+<option value="EEE">EEE</option>
+bit.do/csebnotes
+tiny.cc/csebnotes
+<option value="CIVIL">CIVIL</option>
+<option value="IT">IT</option>
+<option value="AERO">AERO</option>
+<option value="MBA">MBA</option>
+<option value="MTECH">MTECH</option>
+</select></li>
+<li>DOB: <br><br><input type="date" name="DOB" /><br></li>
+<li>Gender:<br>
+<br><input type="radio" name="Gender" value="Male" />Male
+<input type="radio" name="Gender" value="Female" />Female
+<input type="radio" name="Gender" value="Others" />Others</li>
+<li><tab1>Mobile: <tab1><input type="text" placeholder="Mobile" name="Mobile"
+required
+/></tab1></tab1></li>
+<li><tab1>Address: <tab1><input type="text" name="Address"
+placeholder="Address"
+/></tab1></tab1></li>
+</ul>
+<button type="submit" onclick="check()" class="registerbtn" >Submit</button>
+</div>
+</form>
+</body>
+</html>
